@@ -16,8 +16,8 @@ Here is a **concise English summary** of the README and menu options:
 ### Installation
 
 ```bash
-git clone <REPOSITORY_URL>
-cd <REPOSITORY_FOLDER>
+git clone <https://github.com/abdelmonaimzh2023-ctrl/ip-swiper-.git>
+cd < cd ip-swiper->
 chmod +x pass_rg231.sh
 sudo bash pass_rg231.sh
 ```
