@@ -53,4 +53,6 @@ Starts a local PHP server and an Ngrok tunnel, generates a public link and QR co
 * The tool is intended for educational and security testing purposes only
 
 ---
-
+contact us:
+GMAIL: abdelmonaimzh2023@gmail.com
+telegram:@monaimFp
