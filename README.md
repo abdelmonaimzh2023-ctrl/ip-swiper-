@@ -1,52 +1,56 @@
-README
+Here is a **concise English summary** of the README and menu options:
 
-The pass_rg231.sh tool is a powerful script built in Bash that uses advanced protocols such as PHP and Ngrok to collect information and store passwords in an organized manner.
+---
 
-This guide explains how to install, configure, and use the tool correctly in advanced mode for information gathering (Option 9).
+## pass_rg231.sh – Tool Summary
 
-1. Basic Requirements ⚙️
+**pass_rg231.sh** is a Bash-based tool that combines PHP and Ngrok to manage passwords locally and run an advanced information‑gathering mode for authorized testing and educational purposes.
 
-To run the script successfully, the following environment must be available:
+### Requirements
 
-A Linux-based operating system (e.g. Kali Linux, Ubuntu, Termux, etc.)
+* Linux system (Kali, Ubuntu, Termux, etc.)
+* Sudo/root privileges
+* PHP, curl, qrencode
+* Ngrok installed and authenticated with a valid AuthToken
 
-Root/Sudo privileges to install required packages
+### Installation
 
-Required tools installed (such as php and qrencode)
-
-Ngrok installed with a valid and activated AuthToken
-
-2. Installation & Preparation 🚀
-
-The script is designed to automatically install dependencies, but you must follow these steps first:
-
-Step 1: Clone the repository
+```bash
 git clone <REPOSITORY_URL>
 cd <REPOSITORY_FOLDER>
-Step 2: Grant execute permissions
 chmod +x pass_rg231.sh
-Step 3: Run the tool
 sudo bash pass_rg231.sh
-3. Usage 📌
+```
 
-After launching the tool, follow the on-screen menu and select Option 9 to enable the advanced information-gathering mode.
+### Menu Options Overview
 
-The script will:
+**1) Add Password**
+Manually store a password locally by providing a name and password.
 
-Launch a PHP server
+**2) Generate Password**
+Automatically generate a strong random password, save it locally, and optionally create a QR code.
 
-Create an Ngrok tunnel
+**3) Get NGROK config**
+Displays the Ngrok AuthToken configuration command for easy setup.
 
-Generate a QR code (if supported)
+**4) Search**
+Search for stored passwords using keywords.
 
-Collect and store received credentials in an organized file
+**5) Delete All**
+Permanently deletes all stored passwords (irreversible).
 
-4. Notes ⚠️
+**6) Exit**
+Safely closes the tool, stops background processes, and cleans temporary files.
 
-Make sure Ngrok is correctly authenticated before running the script
+**9) Generate QR Info Gatherer (Advanced Mode)**
+Starts a local PHP server and an Ngrok tunnel, generates a public link and QR code, and logs visitor metadata (time, IP, user-agent) to a local file.
+⚠️ Use only in legal, authorized environments.
 
-Use this tool only in authorized and legal environments
+### Notes
 
-Logs and collected data are stored locally in the project directory
+* All data and logs are stored locally
+* Ngrok must be authenticated before use
+* The tool is intended for educational and security testing purposes only
 
-✅ The tool is ready to use once all steps above are completed.
+---
+
