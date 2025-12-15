@@ -1,20 +1,52 @@
-الأداة pass_rg231.sh هي سكريبت قوي مبني على بيئة Bash ويستخدم بروتوكولات متقدمة مثل PHP و Ngrok لجمع المعلومات وتخزين كلمات المرور بطريقة مُنظمة.
+README
 
-سأشرح لك كيفية تشغيلها واستخدام وضعها المتقدم لجمع المعلومات (الخيار 9).
-1. متطلبات التشغيل الأساسية ⚙️
+The pass_rg231.sh tool is a powerful script built in Bash that uses advanced protocols such as PHP and Ngrok to collect information and store passwords in an organized manner.
 
-لتشغيل السكريبت بنجاح، يجب أن تتوفر البيئة التالية:
+This guide explains how to install, configure, and use the tool correctly in advanced mode for information gathering (Option 9).
 
-    نظام تشغيل مبني على Linux (مثل Kali Linux, Ubuntu, Termux، إلخ).
+1. Basic Requirements ⚙️
 
-    صلاحيات الـ Root/Sudo لتثبيت الحزم (مثل qrencode و php).
+To run the script successfully, the following environment must be available:
 
-    برنامج Ngrok مُثبَّت ومُفعَّل عليه الـ Authtoken.
+A Linux-based operating system (e.g. Kali Linux, Ubuntu, Termux, etc.)
 
-الإجراء الفوري: التثبيت والتحضير
+Root/Sudo privileges to install required packages
 
-السكريبت مصمم لـ تثبيت الاعتماديات تلقائيًا.
-الخطوة	الأمر المطلوب	ملاحظات
-1.حمل الاداة عبر الامر git clone  .
-2/قم باعطاء الصلاحيات للاداة  sudo chmod +x pass_rg231.sh
-3/شغل الاداة عبر  bash pass_rg231.sh
+Required tools installed (such as php and qrencode)
+
+Ngrok installed with a valid and activated AuthToken
+
+2. Installation & Preparation 🚀
+
+The script is designed to automatically install dependencies, but you must follow these steps first:
+
+Step 1: Clone the repository
+git clone <REPOSITORY_URL>
+cd <REPOSITORY_FOLDER>
+Step 2: Grant execute permissions
+chmod +x pass_rg231.sh
+Step 3: Run the tool
+sudo bash pass_rg231.sh
+3. Usage 📌
+
+After launching the tool, follow the on-screen menu and select Option 9 to enable the advanced information-gathering mode.
+
+The script will:
+
+Launch a PHP server
+
+Create an Ngrok tunnel
+
+Generate a QR code (if supported)
+
+Collect and store received credentials in an organized file
+
+4. Notes ⚠️
+
+Make sure Ngrok is correctly authenticated before running the script
+
+Use this tool only in authorized and legal environments
+
+Logs and collected data are stored locally in the project directory
+
+✅ The tool is ready to use once all steps above are completed.
